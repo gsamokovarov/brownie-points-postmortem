@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scheduled Tasks</title>
+
+    <link href="css/reveal.css" rel="stylesheet" />
+    <link href="css/simple.css" rel="stylesheet" />
+    <link href="css/googlecode.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="center"><h1>Yo!</h1></section><section class="center"><img class="inline" src="images/me-pixel.png" /></section><section class="center"><p><a href="http://gsamokovarov.com">@gsamokovarov</a></p></section><section class="center" data-background="#000"><h2 class="white">Morning!</h2></section><section class="center"><img class="inline" src="images/banitsa.png" /></section><section class="center"><img class="inline" src="images/ruby.png" /></section><section data-background="http://i.imgur.com/Gl85q.gif"></section><section class="center" data-background="#000"><img class="inline" src="images/rubybanitsa.png" /></section><section class="center" data-background="http://bestanimations.com/Holidays/Fireworks/fireworksanimation-13.gif"><img class="inline" src="images/rubybanitsa.png" /></section><section class="center"><p><a href="http://rubybanitsa.com">rubybanitsa.com</a></p></section><section class="center"><p><a href="http://twitter.com/rubybanitsa">@rubybanitsa</a></p></section><section class="center"><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hello world! Come break with us this Monday morning (EET) in betacafe <a href="https://t.co/F4rGoVe0Rh">https://t.co/F4rGoVe0Rh</a>.<a href="https://twitter.com/hashtag/ruby?src=hash">#ruby</a> + <a href="https://twitter.com/hashtag/banitsa?src=hash">#banitsa</a> = <a href="https://twitter.com/hashtag/yum?src=hash">#yum</a></p>&mdash; Ruby Banitsa (@rubybanitsa) <a href="https://twitter.com/rubybanitsa/status/835961463533633538">February 26, 2017</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></section><section class="center" data-background="#F00"><p class="white">Will repeat at least until we run out of banitsa.</p></section><section class="center" data-background="#F00"><p class="white">May change them dates and times.</p></section><section class="center" data-background="#F00"><p class="white">May change locations.</p></section><section class="center" data-background="#F00"><p class="white">May have presentations.</p></section><section class="center" data-background="#000"></section><section class="center" data-background="#000"><h2 class="white">Scheduled Tasks</h2></section><section class="center"><p class="fragment">Tasks that happen on a schedule.</p><img class="inline fragment" src="images/troll.png" /></section><section><h3>CRON<span class="fragment">++</span></h3><ul><li class="fragment">Available anywhere</li><li class="fragment">Crontab management</li></ul></section><section><h3>CRON<span class="fragment">--</span></h3><ul><li class="fragment">Available anywhere</li><li class="fragment">Crontab management</li></ul></section><section class="center" data-background="http://cdn.quotesgram.com/img/67/32/1578334138-ha-ha-nelson-Simpsons-nelson-ha-ha-93-p-672x480.jpg"></section><section><h3>CRON--</h3><p>How do you actually write those?</p></section><section><h3>CRON--</h3><p>Where do you put them?</p></section><section><h3>CRON--</h3><p>Error management?</p></section><section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"><p class="fragment">Do you even scale, brah?</p></section><section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"></section><section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"><p>Scheduled tasks...</p></section><section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"><p>I dunno how to manage scheduled tasks...</p></section><section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"><p>But!</p></section><section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"><p>I sure know how to manage background tasks!</p></section><section><h3>Active Job<span class="fragment">++</span></h3><ul><li class="fragment">Know where to put them!</li><li class="fragment">Know how to write them!</li><li class="fragment">Know how to scale them!</li><li class="fragment">Know how to error handle them!</li></ul></section><section><h3>Active Job<span class="fragment">--</span></h3><ul><li class="fragment">How to dispatch them?</li></ul></section><section class="center" data-background="#000"><p class="white">How to dispatch them?</p></section><section><h3 class="fragment">CRON<span class="fragment">++</span></h3><ul><li class="fragment">Available anywhere</li><li class="fragment">Crontab management</li><img class="inline fragment" src="images/troll.png" /></ul></section><section><h3 class="fragment">CRON<span class="fragment">--</span></h3><ul><li class="fragment">Spawning a Ruby process...</li><li class="fragment">to queue a background job</li></ul></section><section class="center" data-background="#000"><p class="white">Can we do better than this?</p></section><section><h3 class="fragment">Clockwork<span class="fragment">++</span></h3><ul><li class="fragment">Foreground Ruby process</li><li class="fragment">Put an init script and forget managing it</li><li class="fragment">No ruby spawning to queue a job</li><li class="fragment">Easy to automate/test locally</li></ul></section><section><h3 class="fragment">Clockwork<span class="fragment">--</span></h3><ul><li class="fragment">Dependency</li></ul></section><section class="center" data-background="#000"><p class="white">Dependency</p></section><section class="center" data-background="#000"><p class="white">I know, just another line in the Gemfile.</p></section><section class="center" data-background="#000"><p class="white">What's the big deal?</p></section><section class="center" data-background="#F00"><p class="white fragment">Dependencies are like drugs!</p></section><section class="center" data-background="#F00"><p class="white">THEY ARE AWESOME!</p></section><section class="center" data-background="http://cdn.acidcow.com/pics/20120530/gifto_turn_on_tune_14.gif"><p class="white">THEY ARE AWESOME!</p></section><section data-background="http://cdn.acidcow.com/pics/20120530/gifto_turn_on_tune_14.gif"></section><section class="center"><p>This one is kinda unstable, maintenance-wise...</p></section><section><h3 class="fragment">Clockwork<span class="fragment">--</span></h3><ul><li class="fragment">High CPU usage with the default interval</li><li class="fragment">Missing events with longer intervals</li><li class="fragment">Missing events during redeploys</li><li class="fragment">Loosely maintained</li></ul></section><section class="center" data-background="#000"><p class="white fragment">USE CRON!</p></section><section class="center" data-background="#000"><p class="white">IT'S FINE!</p></section><section class="center" data-background="#000"><p class="white">IT WILL MAKE YOU FEEL GOOD!</p></section><section class="center" data-background="http://cdn.acidcow.com/pics/20120530/gifto_turn_on_tune_14.gif"><p class="white fragment">OR USE CLOCKWORK<span class="fragment">, WHATEVER</span></p></section><section data-background="http://cdn.acidcow.com/pics/20120530/gifto_turn_on_tune_14.gif"></section>
+      </div>
+    </div>
+
+    <script src="js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script type="text/javascript">
+      Reveal.initialize({
+        width:  '100%',
+        height: '100%',
+        margin: 0.05,
+        controls: false,
+        progress: false,
+        history: true,
+        center: false,
+        rollingLinks: true,
+        transition: 'none',
+        backgroundTransition: 'none',
+        dependencies: [
+          {
+            src: 'js/highlight.js',
+            async: true,
+            callback: function() {
+              hljs.configure({ languages: ['ruby'] });
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </body>
+</html>

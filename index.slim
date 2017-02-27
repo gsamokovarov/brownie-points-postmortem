@@ -1,0 +1,204 @@
+---
+layout: slide
+title: Scheduled Tasks
+---
+
+section.center
+  h1 Yo!
+
+section.center
+  img.inline src="images/me-pixel.png"
+
+section.center
+  p: a(href="http://gsamokovarov.com") @gsamokovarov
+
+section.center data-background="#000"
+  h2.white Morning!
+
+section.center
+  img.inline src="images/banitsa.png"
+
+section.center
+  img.inline src="images/ruby.png"
+
+section data-background="http://i.imgur.com/Gl85q.gif"
+
+section.center data-background="#000"
+  img.inline src="images/rubybanitsa.png"
+
+section.center data-background="http://bestanimations.com/Holidays/Fireworks/fireworksanimation-13.gif"
+  img.inline src="images/rubybanitsa.png"
+
+section.center
+  p: a(href="http://rubybanitsa.com") rubybanitsa.com
+
+section.center
+  p: a(href="http://twitter.com/rubybanitsa") @rubybanitsa
+
+section.center
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hello world! Come break with us this Monday morning (EET) in betacafe <a href="https://t.co/F4rGoVe0Rh">https://t.co/F4rGoVe0Rh</a>.<a href="https://twitter.com/hashtag/ruby?src=hash">#ruby</a> + <a href="https://twitter.com/hashtag/banitsa?src=hash">#banitsa</a> = <a href="https://twitter.com/hashtag/yum?src=hash">#yum</a></p>&mdash; Ruby Banitsa (@rubybanitsa) <a href="https://twitter.com/rubybanitsa/status/835961463533633538">February 26, 2017</a></blockquote>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+section.center data-background="#F00"
+  p.white Will repeat at least until we run out of banitsa.
+
+section.center data-background="#F00"
+  p.white May change them dates and times.
+
+section.center data-background="#F00"
+  p.white May change locations.
+
+section.center data-background="#F00"
+  p.white May have presentations.
+
+section.center data-background="#000"
+section.center data-background="#000"
+  h2.white Scheduled Tasks
+
+section.center
+  p.fragment Tasks that happen on a schedule.
+  img.inline.fragment src="images/troll.png"
+
+section
+  h3 CRON<span class="fragment">++</span>
+
+  ul
+    li.fragment Available anywhere
+    li.fragment Crontab management
+
+section
+  h3 CRON<span class="fragment">--</span>
+
+  ul
+    li.fragment Available anywhere
+    li.fragment Crontab management
+
+section.center data-background="http://cdn.quotesgram.com/img/67/32/1578334138-ha-ha-nelson-Simpsons-nelson-ha-ha-93-p-672x480.jpg"
+
+section
+  h3 CRON--
+
+  p How do you actually write those?
+
+section
+  h3 CRON--
+
+  p Where do you put them?
+
+section
+  h3 CRON--
+
+  p Error management?
+
+section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"
+  p.fragment Do you even scale, brah?
+
+section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"
+section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"
+  p Scheduled tasks...
+
+section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"
+  p I dunno how to manage scheduled tasks...
+
+section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"
+  p But!
+
+section data-background="https://media.giphy.com/media/26gJznY7RNwZuq6go/source.gif"
+  p I sure know how to manage background tasks!
+
+section
+  h3 Active Job<span class="fragment">++</span>
+
+  ul
+    li.fragment Know where to put them!
+    li.fragment Know how to write them!
+    li.fragment Know how to scale them!
+    li.fragment Know how to error handle them!
+
+section
+  h3 Active Job<span class="fragment">--</span>
+
+  ul
+    li.fragment How to dispatch them?
+
+section.center data-background="#000"
+  p.white How to dispatch them?
+
+section
+  h3.fragment CRON<span class="fragment">++</span>
+
+  ul
+    li.fragment Available anywhere
+    li.fragment Crontab management
+    img.inline.fragment src="images/troll.png"
+
+section
+  h3.fragment CRON<span class="fragment">--</span>
+
+  ul
+    li.fragment Spawning a Ruby process...
+    li.fragment to queue a background job
+
+section.center data-background="#000"
+  p.white Can we do better than this?
+
+section
+  h3.fragment Clockwork<span class="fragment">++</span>
+
+  ul
+    li.fragment Foreground Ruby process
+    li.fragment Put an init script and forget managing it
+    li.fragment No ruby spawning to queue a job
+    li.fragment Easy to automate/test locally
+
+section
+  h3.fragment Clockwork<span class="fragment">--</span>
+
+  ul
+    li.fragment Dependency
+
+section.center data-background="#000"
+  p.white Dependency
+
+section.center data-background="#000"
+  p.white I know, just another line in the Gemfile.
+
+section.center data-background="#000"
+  p.white What's the big deal?
+
+section.center data-background="#F00"
+  p.white.fragment Dependencies are like drugs!
+
+section.center data-background="#F00"
+  p.white THEY ARE AWESOME!
+
+section.center data-background="http://cdn.acidcow.com/pics/20120530/gifto_turn_on_tune_14.gif"
+  p.white THEY ARE AWESOME!
+
+section data-background="http://cdn.acidcow.com/pics/20120530/gifto_turn_on_tune_14.gif"
+
+section.center
+  p This one is kinda unstable, maintenance-wise...
+
+section
+  h3.fragment Clockwork<span class="fragment">--</span>
+
+  ul
+    li.fragment High CPU usage with the default interval
+    li.fragment Missing events with longer intervals
+    li.fragment Missing events during redeploys
+    li.fragment Loosely maintained
+
+section.center data-background="#000"
+  p.white.fragment USE CRON!
+
+section.center data-background="#000"
+  p.white IT'S FINE!
+
+section.center data-background="#000"
+  p.white IT WILL MAKE YOU FEEL GOOD!
+
+section.center data-background="http://cdn.acidcow.com/pics/20120530/gifto_turn_on_tune_14.gif"
+  p.white.fragment OR USE CLOCKWORK<span class="fragment">, WHATEVER</span>
+
+section data-background="http://cdn.acidcow.com/pics/20120530/gifto_turn_on_tune_14.gif"
