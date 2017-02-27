@@ -1,9 +1,23 @@
 @charset "UTF-8";
 
 @font-face {
+  font-family: 'bt_mono';
+  src: url('fonts/bt_mono-Bold.eot');
+  src: url('fonts/bt_mono-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/bt_mono-Bold.woff2') format('woff2'),
+       url('fonts/bt_mono-Bold.woff') format('woff'),
+       url('fonts/bt_mono-Bold.ttf') format('truetype'),
+       url('fonts/bt_mono-Bold.svg#bt_monoregular') format('svg');
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
   font-family: 'DOS';
   src: url('fonts/Fixedsys500c.eot');
-  src: local('☺'), url('fonts/Fixedsys500c.woff') format('woff'), url('fonts/Fixedsys500c.ttf') format('truetype'), url('fonts/Fixedsys500c.svg') format('svg');
+  src: local('☺'),
+       url('fonts/Fixedsys500c.woff') format('woff'),
+       url('fonts/Fixedsys500c.ttf') format('truetype'),
+       url('fonts/Fixedsys500c.svg') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -22,7 +36,7 @@ body {
   background-color: white; }
 
 .reveal {
-  font-family: Courier, monospace;;
+  font-family: bt_mono, monospace;
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
@@ -44,7 +58,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: bt_mono, monospace;
   font-weight: normal;
   line-height: 0.9em;
   letter-spacing: 0.02em;
@@ -173,12 +187,12 @@ body {
  * CODE
  *********************************************/
 .reveal pre {
-  font-family: 'Open Sans', sans-serif;
+  font-family: bt_mono, monospace;
   box-shadow: none !important;
 }
 
 .reveal code {
-  font-family: 'Open Sans', sans-serif;
+  font-family: bt_mono, monospace;
 }
 
 /*********************************************

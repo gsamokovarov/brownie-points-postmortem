@@ -8,7 +8,7 @@
   font-style: normal; }
 
 body {
-  font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: bt_mono, monospace;
   margin: 0;
   -webkit-font-smoothing: antialiased; }
 
@@ -20,7 +20,7 @@ a {
   left: 15px;
   top: 15px;
   width: 80px;
-  font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace; }
+  font-family: bt_mono, monospace;
   .sidebar a {
     text-decoration: none; }
   .sidebar img {
@@ -74,28 +74,28 @@ a {
   margin-bottom: 50px; }
   .content h1 {
     color: #333;
-    font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-family: bt_mono, monospace;
     font-weight: 400; }
   .content h1 a {
     color: #111;
     text-decoration: none; }
   .content h2 {
     color: #333;
-    font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-family: bt_mono, monospace;
     font-weight: 400; }
   .content h2 a {
     color: #111;
     text-decoration: none; }
   .content h3 {
     color: #333;
-    font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-family: bt_mono, monospace;
     font-weight: 400; }
   .content h3 a {
     color: #111;
     text-decoration: none; }
   .content h4 {
     color: #333;
-    font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-family: bt_mono, monospace;
     font-weight: 400; }
   .content h4 a {
     color: #111;
@@ -156,7 +156,7 @@ a {
       font-style: normal; }
   .content .byline {
     margin-bottom: 17px;
-    font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-family: bt_mono, monospace;
     padding-left: 0px;
     font-size: 17px;
     color: #777; }
@@ -170,7 +170,7 @@ a {
   .content .listing {
     margin: 10px 0 0 0;
     padding: 0;
-    font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace; }
+    font-family: bt_mono, monospace;
     .content .listing ul {
       margin: 0;
       padding: 0; }
