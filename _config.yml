@@ -7,6 +7,6 @@ permalink: /posts/:title
 gems:
   - jekyll-slim
 
-name: jump
-url: http://gsamokovarov/jump-intro
-description: jump - a quick and fuzzy directory jumper
+name: Brownie Points Postmortem
+url: http://gsamokovarov/brownie-points-postmortem
+description: BP+
